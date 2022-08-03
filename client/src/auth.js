@@ -4,7 +4,7 @@ const accessTokenKey = 'accessToken';
 const loginUrl = 'http://localhost:9000/login';
 
 function getUserFromToken(token) {
-  return jwtDecode(token).sub;
+  return jwtDecode(token).userID;
 }
 
 export function getAccessToken() {
